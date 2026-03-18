@@ -1,0 +1,9 @@
+services:
+  student_api:
+    build: .
+    ports:
+      - "8085:8085"
+    environment:
+      - CONFIG_PATH=config/local.yaml
+    volumes:
+      - ./storage:/app/storage
